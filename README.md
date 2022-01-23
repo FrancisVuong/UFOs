@@ -18,6 +18,7 @@
 ### Analysis of Outcomes 
 
 - We were successful in creating our webpage, the filters are functional as well.
+![image](https://user-images.githubusercontent.com/92435456/150698093-36f6a3f9-03c7-48e9-a414-d3408b169ff4.png)
 
 ### Challenges and Difficulties Encountered
 
