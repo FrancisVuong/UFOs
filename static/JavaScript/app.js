@@ -5,17 +5,17 @@ const tableData = data;
 var tbody = d3.select("tbody");
 
 function buildTable(data) {
-  // First, clear out any existing data
-  tbody.html("");
+// First, clear out any existing data
+    tbody.html("");
 
-  // Next, loop through each object in the data
-  // and append a row and cells for each value in the row
-  data.forEach((dataRow) => {
+// Next, loop through each object in the data
+// and append a row and cells for each value in the row
+    data.forEach((dataRow) => {
     // Append a row to the table body
     let row = tbody.append("tr");
 
-    // Loop through each field in the dataRow and add
-    // each value as a table cell (td)
+// Loop through each field in the dataRow and add
+// each value as a table cell (td)
     Object.values(dataRow).forEach((val) => {
       let cell = row.append("td");
       cell.text(val);
@@ -30,18 +30,18 @@ var filters = {};
 function updateFilters() {
 
     // 4a. Save the element that was changed as a variable.
-  let element = d3.select(this);
+    let element = d3.select(this);
     // 4b. Save the value that was changed as a variable.
-  let elementValue = element.property("value");
+    let elementValue = element.property("value");
     // 4c. Save the id of the filter that was changed as a variable.
-  let elementId = element.attr("id");
+    let elementId = element.attr("id");
   
     // 5. If a filter value was entered then add that filterId and value
     // to the filters list. Otherwise, clear that filter from the filters object.
-  if (elementValue) {
+    if (elementValue) {
     filters[elementId] = elementValue;
   }
-  else {
+    else {
     delete filters[elementId];
   }
   // Display the filters list on the console.
